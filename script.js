@@ -63,12 +63,6 @@ message.innerHTML =
   'We use cookies for improved functionality and analytics. <button class="btn btn--close--cookie">Got it!</button>';
 const header = document.querySelector('.header');
 header.append(message);
-message.style.position = 'fixed';
-message.style.bottom = '0';
-message.style.zIndex = '200';
-message.style.background = '#37383d';
-message.style.height =
-  Number.parseFloat(getComputedStyle(message).height, 10) + 25 + 'px';
 
 // Delete Cookie Message
 const cookieBtn = document.querySelector('.btn--close--cookie');
