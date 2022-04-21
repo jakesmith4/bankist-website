@@ -351,6 +351,14 @@ h4 {
   position: relative;
 }
 
+@media screen and (min-width: 665px) {
+  .highlight {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 5.5rem;
+  }
+}
+
 .highlight::after {
   display: block;
   content: '';

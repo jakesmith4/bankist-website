@@ -41,7 +41,7 @@ navToggle.addEventListener('click', () =>
 );
 
 // Dark Theme Toggle Button
-let flag = true;
+let flag;
 const checkbox = document.querySelector('.checkbox__toggle');
 checkbox.addEventListener('change', () => {
   document.body.classList.toggle('dark');
@@ -49,7 +49,7 @@ checkbox.addEventListener('change', () => {
   navToggle.classList.toggle('dark');
   modal.classList.toggle('dark');
   flag = !flag;
-  if (!flag) {
+  if (flag) {
     document.documentElement.style.setProperty('--color-primary', '#ff585f');
   } else {
     document.documentElement.style.setProperty('--color-primary', '#5ec576');
