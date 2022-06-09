@@ -74,15 +74,14 @@ header.append(message);
 
 // Delete Cookie Message
 const cookieBtn = document.querySelector('.btn--close--cookie');
-// console.log(cookieBtn);
 cookieBtn.addEventListener('click', () => {
   message.remove();
 });
 
 // Learn More Scroll TO
 btnScrollTo.addEventListener('click', function (e) {
-  const s1coords = section1.getBoundingClientRect();
-  console.log(s1coords);
+  // const s1coords = section1.getBoundingClientRect();
+  // console.log(s1coords);
   // OLDSCHOOL WAY OF SMOOTH SCROLL
   // window.scrollTo(
   //   s1coords.left + window.pageYOffset,
@@ -102,8 +101,12 @@ btnScrollTo.addEventListener('click', function (e) {
   section1.scrollIntoView();
 });
 
-// PAGE NAVIGATION
+// Close Navbar
+const closeNav = () => {
+  navLinks.classList.remove('nav__links--toggle');
+};
 
+// PAGE NAVIGATION
 // 1. Add event listener to common parent element
 // 2. Determine what element originated the event
 document.querySelector('.nav__links').addEventListener('click', function (e) {
@@ -115,6 +118,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
     if (id !== '#')
       document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
+  closeNav();
 });
 
 // TABBED COMPONENT

@@ -220,9 +220,6 @@ img {
 }
 
 .nav__links {
-  /* display: flex; */
-  /* display: none; */
-  /* align-items: center; */
   background: #f4f4f4;
   color: #444;
   list-style: none;
