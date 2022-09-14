@@ -785,14 +785,6 @@ h4 {
   padding-top: 1.5rem;
 }
 
-.modal__form {
-  /* margin: 0 3rem; */
-  /* display: grid; */
-  /* grid-template-columns: 1fr 2fr; */
-  /* align-items: center; */
-  /* gap: 2.5rem; */
-}
-
 .modal__form label {
   font-size: 1.7rem;
   font-weight: 500;
